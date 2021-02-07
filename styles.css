@@ -1,0 +1,163 @@
+
+
+
+/* GENERAL */
+
+*{
+  box-sizing: border-box;
+}
+
+
+  /* TOP */
+  .navbar-brand{
+    font-weight:500;
+  }
+.hero{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/background.jpg');
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+
+  padding: 5%;
+}
+
+.caption{
+  color: white;
+
+}
+
+/* BODY */
+
+.main-container{
+  width: 70%;
+  padding: 20px;
+  margin: 10% auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-style: solid;
+  border-width: thin;
+  }
+
+  .name-input{
+  width: 40%;
+  margin-bottom: 5%;
+  }
+
+  .name-input button, input {
+  display: inline-block;
+  padding: 2% !important;
+  margin: 0 !important;
+  height: 9% !important;
+  }
+
+  .name-input button{
+    width: 35%;
+
+  }
+
+  input{
+    width: 60%;
+  }
+
+
+
+ .dashboard{
+  background-color: white;
+  height: fit-content;
+  width: 60%;
+  padding: 20px;
+ }
+
+.img-container{
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+ }
+
+ .fade{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+ }
+
+ @-webkit-keyframes fade{
+   from {opacity: .4}
+   to {opacity: 1}
+ }
+  /* SELECTS */
+ select{
+  width: 100%;
+  border-radius: 5%;
+  padding: 2%;
+}
+
+select:focus{
+  outline-color: #252525;
+  border-color: #252525;
+  border-width: thin;
+  border-style: outset;
+}
+
+
+  .main-section{
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+
+
+  /* FOOTER */
+
+  footer{
+    color: white;
+    background-color: #252525;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+
+  h6{
+    font-size: large;
+  }
+
+  /* SLIDESHOW */
+
+ .prev{
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   border-right: 2px solid black;
+   border-bottom: 2px solid black;
+   border-width: thick;
+   transform: rotate(135deg);
+   opacity: 0.6;
+ }
+
+ .next{
+   width: 20px;
+   height: 20px;
+   cursor: pointer;
+   border-right: 2px solid black;
+   border-bottom: 2px solid black;
+   border-width: thick;
+   transform: rotate(-45deg);
+    opacity: 0.6;
+ }
+
+ .slide-show-button .next, .slide-show-button .prev{
+   position: absolute;
+   top: 50%;
+
+
+ }
+ .slide-show-button .next{
+    right: 5%;
+ }
+
+
+
+ .slide-show-button .prev{
+   left: 5%;
+ }
+
+ .slide-show-button :hover{
+   background-color: rgba(0,0,0,0.8) !important;
+
+ }
