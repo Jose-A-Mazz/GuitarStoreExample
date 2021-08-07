@@ -6,31 +6,44 @@
   <title>Constructor de instrumentos</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link href="fontisto-master/css/fontisto/fontisto.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="fontisto-master/css/fontisto/fontisto.min.css" >
+  <script src="https://kit.fontawesome.com/a6c5a07757.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
 
-  <nav class='navbar navbar-expand-lg navbar-dark shadow sticky-top' style='background-color: #252525;'>
-    <div class="container-fluid">
-      <a class="navbar-brand mx-auto text-warning" href="#">Guitarras Españolas</a>
-      <i class="fi fi-shopping-basket"></i>
-     </div>
-  </nav>
+
+  <div class="cart-box shadow rounded">
+
+  </div>
 
   <div class="hero">
-    <div class="caption">
+    <nav class='navbar navbar-expand-lg'>
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Guitarras Españolas</a>
+        <!-- <button class='btn cart-button' style='background-color: white;' type="button" name="button">Cart</button> -->
+        <!-- <i class="fas fa-cart-plus fa-2x cart-button"></i> -->
+        <i class="fas fa-shopping-cart fa-1x fa-black cart-button icon-fa" style='color: white;'></i>
+
+       </div>
+    </nav>
+
+
+    <!-- <div class="caption">
       <h1>Seleccione nuestras guitarras artesanales</h1>
       <h1>Guitarras Españolas Inc.</h1>
-    </div>
+    </div> -->
 
   </div>
 
   <section class='main-section'>
-    <div class="mx-auto name-input">
-      <input type="text" name=""  value="" placeholder="Guitarra a nombre de Carlos">
-      <button type="button" class='btn btn-success' name="button">Enviar</button>
-    </div>
+
+      <div class="input-group mb-5 mx-auto">
+  <input type="text" class="form-control" placeholder="Guitarra a nombre de Carlos" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <button class="btn btn-success" type="button" id="button-addon2">Enviar</button>
+</div>
+
     <div class="container mx-auto">
       <div class="row">
         <div class="col-lg-6">
@@ -74,7 +87,10 @@
             </select>
             <p></p>
             <hr>
-            <button class='btn btn-outline-dark' type="button" name="button">Reservar</button>
+
+  <!-- <span class="visually-hidden"></span> -->
+
+            <button class='btn btn-outline-dark reservar' type="button" name="button"><div class="spinner-border mr2 spinner-border-sm" role="status" style='display: none;'></div>Reservar</button>
 
           </div>
 
